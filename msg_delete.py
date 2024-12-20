@@ -14,6 +14,6 @@ for i in range(min_msg, max_msg, 100):
                     params={"message_ids": msgs,
                           "delete_for_all": 1,
                           "v": "5.199",
-                          "access_token": "vk_token"})
+                          "access_token": vk_token})
     print(messages.json())
     time.sleep(0.34)
