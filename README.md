@@ -1,47 +1,42 @@
-# Delete VK Messages for Recipient / Удалить сообщения пользователя для двух сторон  
+# VK Message Remover  
 
-## 📋 Steps to Use / Инструкция  
-
-### 1. Get a Token / Получение токена  
-- **English:**  
-  Obtain a token for your VK page:  
-  - Use [vkhost.github.io](https://vkhost.github.io/).  
-  - Follow the instructions provided on the website to generate your token.  
-
-- **Русский:**  
-  Получите токен для вашей страницы VK:  
-  - Используйте [vkhost.github.io](https://vkhost.github.io/).  
-  - Следуйте инструкциям на сайте, чтобы сгенерировать токен.  
+[🇷🇺 RUS](#rus) | [🇬🇧 ENG](#eng)  
 
 ---
 
-### 2. Set Up the Script / Настройка скрипта  
-- **English:**  
-  - Open the file `msg_delete.py`.  
-  - Define the range of messages to delete by setting:  
-    - `min_msg`: ID of the first message to delete.  
-    - `max_msg`: ID of the last message to delete.  
-  - Insert the token you obtained in step 1 into the variable `vk_token`.  
+# <a name="rus"></a>🇷🇺 RUS
+# Цель
+Скрипт позволяет удалить определенный промежуток сообщений для двух сторон.
 
-- **Русский:**  
-  - Откройте файл `msg_delete.py`.  
-  - Укажите диапазон сообщений для удаления:  
+Скрипт работает для личных сообщений, сообщений в беседах, а также для сообщений внутри ботов.
+
+---
+
+## 📋 Инструкция  
+
+### 1. Получение токена
+Получите токен для страницы VK:  
+  - Для упрощения процедуры можно воспользоваться сервисом [vkhost.github.io](https://vkhost.github.io/). 
+
+  `Предпочительное приложение для получения токена: Kate Mobile`
+
+---
+
+### 2. Настройка скрипта
+  - Укажите диапазон сообщений для удаления внутри файла `msg_delete.py`:  
     - `min_msg`: ID первого сообщения, которое нужно удалить.  
     - `max_msg`: ID последнего сообщения, которое нужно удалить.  
   - Вставьте полученный токен в переменную `vk_token`.  
 
 ---
 
-### 3. Run the Script / Запуск скрипта  
-- **English:**  
-  - Launch your terminal.  
-  - Run the script using the command:  
+### 3. Запуск скрипта
+  - Скачайте и установите [Python 3](https://www.python.org/downloads/). 
+  - Откройте PowerShell, CMD или Terminal
+  - Скачайте необходимые библиотеки с помощью команды:
     ```bash
-    python msg_delete.py
+    pip install requirements.txt
     ```  
-
-- **Русский:**  
-  - Откройте терминал.  
   - Запустите скрипт с помощью команды:  
     ```bash
     python msg_delete.py
@@ -49,33 +44,64 @@
 
 ---
 
-### 4. Revoke Permissions (For Security) / Отзыв разрешений (для безопасности)  
-- **English:**  
-  - After the script completes, visit [VK External Services](https://id.vk.com/account/#/services).  
-  - Locate the app you used in step 1 under **External services**.  
-  - Revoke all permissions for the app.  
+## ⚠️ Действия после использования скрипта
 
-- **Русский:**  
-  - После завершения работы скрипта перейдите в [Внешние сервисы VK](https://id.vk.com/account/#/services).  
-  - Найдите приложение, которым вы пользовались на шаге 1, в разделе **Внешние сервисы**.  
-  - Отзовите все разрешения для приложения.  
+### Отзыв ранее сгенерированного токена
+В целях безопасности, крайне рекомендуется отозвать ранее полученный токен приложения. Чтобы отозвать токен, нужно:
+  - Перейти на страницу [Внешних сервисов VK](https://id.vk.com/account/#/services).
+  - Найти приложение, которое ранее было использовано для получения токена в разделе **Внешние сервисы**.
+  - Отозвать токен для данного приложения  
 
----
-
-## ⚠️ Disclaimer / Внимание  
-- **English:**  
-  Use this script responsibly. Deleting messages for both sides is irreversible. Ensure you have the proper permissions to modify message history.  
-
-- **Русский:**  
-  Используйте скрипт ответственно. Удаление сообщений для обеих сторон является необратимым. Убедитесь, что у вас есть необходимые права для изменения истории сообщений.  
+[⬆️ К началу](#vk-message-remover)  
 
 ---
 
-## 🛠 Requirements / Требования  
-- **English:**  
-  - Python installed on your system.  
-  - requests library 
+# <a name="eng"></a>🇬🇧 ENG
+# Purpose
+The script allows you to delete a specific range of messages for both parties.
 
-- **Русский:**  
-  - Установленный Python.  
-  - библиотека requests  
+It works for private messages, group chats, and bot messages.
+
+---
+
+## 📋 Instructions  
+
+### 1. Getting a Token
+Get a token for your VK page:  
+  - To simplify the procedure, you can use [vkhost.github.io](https://vkhost.github.io/).  
+
+  `Preferred application for getting a token: Kate Mobile`  
+
+---
+
+### 2. Script Configuration
+  - Specify the range of messages to delete inside the `msg_delete.py` file:  
+    - `min_msg`: ID of the first message to delete.  
+    - `max_msg`: ID of the last message to delete.  
+  - Insert the received token into the `vk_token` variable.  
+
+---
+
+### 3. Running the Script
+  - Download and install [Python 3](https://www.python.org/downloads/).  
+  - Open PowerShell, CMD, or Terminal.  
+  - Install the required libraries with the command:  
+    ```bash
+    pip install requirements.txt
+    ```  
+  - Run the script using the command:  
+    ```bash
+    python msg_delete.py
+    ```  
+
+---
+
+## ⚠️ Actions After Using the Script  
+
+### Revoking the Previously Generated Token
+For security reasons, it is highly recommended to revoke the previously obtained application token. To revoke it, you need to:  
+  - Go to the [VK External Services](https://id.vk.com/account/#/services) page.  
+  - Find the application previously used to obtain the token in the **External Services** section.  
+  - Revoke the token for this application.  
+
+[⬆️ Back to Top](#vk-message-remover)  
