@@ -1,10 +1,19 @@
 # VK Message Remover  
 
-[🇷🇺 RUS](#rus) | [🇬🇧 ENG](#eng)  
+<div align="center">
+
+## [🇷🇺 RUS](#rus) | [🇬🇧 ENG](#eng)
+
+</div>
 
 ---
 
+<div align="center">
+
 # <a name="rus"></a>🇷🇺 RUS
+
+</div>
+
 # Цель
 Скрипт позволяет удалить определенный промежуток сообщений для двух сторон.
 
@@ -52,11 +61,16 @@
   - Найти приложение, которое ранее было использовано для получения токена в разделе **Внешние сервисы**.
   - Отозвать токен для данного приложения  
 
-[⬆️ К началу](#vk-message-remover)  
+[⬆️ В начало](#vk-message-remover)  
 
 ---
 
+<div align="center">
+
 # <a name="eng"></a>🇬🇧 ENG
+
+</div>
+
 # Purpose
 The script allows you to delete a specific range of messages for both parties.
 
