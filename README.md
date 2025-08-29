@@ -31,15 +31,7 @@
 
 ---
 
-### 2. Настройка скрипта
-  - Укажите диапазон сообщений для удаления внутри файла `msg_delete.py`:  
-    - `min_msg`: ID первого сообщения, которое нужно удалить.  
-    - `max_msg`: ID последнего сообщения, которое нужно удалить.  
-  - Вставьте полученный токен в переменную `vk_token`.  
-
----
-
-### 3. Запуск скрипта
+### 2. Запуск скрипта
   - Скачайте и установите [Python 3](https://www.python.org/downloads/). 
   - Откройте PowerShell, CMD или Terminal
   - Скачайте необходимые библиотеки с помощью команды:
@@ -48,8 +40,11 @@
     ```  
   - Запустите скрипт с помощью команды:  
     ```bash
-    python msg_delete.py
+    python msg_delete.py --min_msg 1 --max_msg 15000000 --vk_token "VK Token"
     ```  
+    - Аргумент `--min_msg` отвечает за ID первого сообщение, с которого нужно начать удаление.
+    - Аргумент `--max_msg` отвечает за ID последнего сообщения, которое нужно удалить.
+    - Аргумент `--vk_token` отвечает за ранее полученный токен VK
 
 ---
 
@@ -88,25 +83,20 @@ Get a token for your VK page:
 
 ---
 
-### 2. Script Configuration
-  - Specify the range of messages to delete inside the `msg_delete.py` file:  
-    - `min_msg`: ID of the first message to delete.  
-    - `max_msg`: ID of the last message to delete.  
-  - Insert the received token into the `vk_token` variable.  
-
----
-
-### 3. Running the Script
+### 2. Running the Script
   - Download and install [Python 3](https://www.python.org/downloads/).  
   - Open PowerShell, CMD, or Terminal.  
   - Install the required libraries with the command:  
     ```bash
     pip install requirements.txt
     ```  
-  - Run the script using the command:  
+  - Run the script with the command:  
     ```bash
-    python msg_delete.py
+    python msg_delete.py --min_msg 1 --max_msg 15000000 --vk_token "VK Token"
     ```  
+    - The `--min_msg` argument specifies the ID of the first message to delete.  
+    - The `--max_msg` argument specifies the ID of the last message to delete.  
+    - The `--vk_token` argument is the previously obtained VK token.  
 
 ---
 
