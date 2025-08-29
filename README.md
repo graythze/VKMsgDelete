@@ -1,7 +1,6 @@
-# VK Message Remover  
-
 <div align="center">
 
+# VK Message Remover  
 ## [🇷🇺 RUS](#rus) | [🇬🇧 ENG](#eng)
 
 </div>
