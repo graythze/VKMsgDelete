@@ -13,7 +13,7 @@ def delete_messages(min_msg: int, max_msg: int, vk_token: str):
         print(f"Deleting messages: {msgs}")
 
         response = requests.get(
-            "https://api.vk.com/method/messages.delete",
+            "https://api.vk.ru/method/messages.delete",
             params={
                 "message_ids": msgs,
                 "delete_for_all": 1,
