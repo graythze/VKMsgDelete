@@ -35,4 +35,3 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     delete_messages(args.min_msg, args.max_msg, args.vk_token)
-
